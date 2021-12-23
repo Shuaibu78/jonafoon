@@ -16,6 +16,11 @@ export const Container = styled.div`
   z-index: 999;
   opacity: 0.95;
   box-shadow: 0px 2px 15px rgb(0 0 0 / 5%);
+
+  ${mobile} {
+    width: 100%;
+    top: 0;
+  }
 `;
 
 export const HamburgerButton = styled.button`
@@ -35,6 +40,11 @@ export const LogoWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${mobile} {
+    width: 50%;
+    justify-content: flex-start;
+  }
 `;
 
 export const NavLinks = styled.div`
@@ -54,6 +64,11 @@ export const NavLinkWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 50%;
+
+    ${mobile} {
+    width: 50%;
+    justify-content: flex-end;
+  }
 `;
 
 export const HamburgerNavContainer = styled.div`

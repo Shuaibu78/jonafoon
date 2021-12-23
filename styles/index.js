@@ -1,13 +1,18 @@
 import styled from 'styled-components';
-import { Colors, FontSizes } from "../components/constants/theme";
+import { Colors, FontSizes, media } from "../components/constants/theme";
 
 const { white, primaryColor, black } = Colors;
 const { titleFontSize, secondaryFontSize } = FontSizes;
+const { mobile } = media;
 
 export const HeroContainer = styled.div`
   width: 100%;
   height: fit-content;
   position: relative;
+
+  ${mobile}{
+    background-color: #f8f8f8;
+  }
 `;
 
 export const ImageWrap = styled.span`
@@ -17,6 +22,10 @@ export const ImageWrap = styled.span`
   span {
     width: inherit !important;
     background-color: black;
+  }
+
+      ${mobile}{
+    display: none;
   }
 `;
 
@@ -38,6 +47,27 @@ export const HeroTitle = styled.div`
       width: 640px;
       height: 80px;
   }
+
+  ${mobile}{
+    
+    position: initial;
+    top: 0;
+    left: 0;
+    color: ${black};
+    padding-top: 8rem;
+    margin-inline: 2rem;
+
+    p {
+      font-size: 18px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 38px;
+      width: 90%;
+      height: fit-content;
+    }
+  }
 `;
 
 export const HeroBtnContainer = styled.div`
@@ -45,6 +75,10 @@ export const HeroBtnContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 430px;
+
+  ${mobile}{
+    width: 90%;
+  }
 `;
 
 export const ServiceBtn = styled.button`
@@ -57,6 +91,10 @@ export const ServiceBtn = styled.button`
   height: 64px;
   border: 1px solid ${primaryColor};
   cursor: pointer;
+
+  ${mobile}{
+    width: 40%;
+  }
 `;
 
 export const TalkToUsBtn = styled(ServiceBtn)`
@@ -76,7 +114,12 @@ export const ProjectBtn = styled.button`
   width: 170px;
   height: 64px;
   border: 1px solid transparent;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 5%);
   cursor: pointer;
+
+    ${mobile}{
+    width: 40%;
+  }
 `;
 
 export const CardBtn = styled(ProjectBtn)`
@@ -87,7 +130,7 @@ export const CardBtn = styled(ProjectBtn)`
 `;
 
 export const RecentWorkContainer = styled.div`
-  background-color: #F9F9F9;
+  background-color: #f8f8f8;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -100,6 +143,11 @@ export const RecentWorkWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+    ${mobile}{
+    width: 90%;
+    height: fit-content;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -109,6 +157,12 @@ export const Paragraph = styled.p`
   line-height: 33px;
   width: 50%;
   text-align: center;
+
+  ${mobile}{
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+  }
 `;
 
 export const TitleDescription = styled.p`
@@ -117,6 +171,12 @@ export const TitleDescription = styled.p`
   color: ${black};
   line-height: 40px;
   width: 50%;
+
+  ${mobile}{
+    width: 90%;
+    font-size: 22px;
+    line-height: 30px;
+  }
 `;
 
 export const CardParagraph = styled(Paragraph)`
@@ -124,6 +184,10 @@ export const CardParagraph = styled(Paragraph)`
   font-size: 20px;
   width: 80%;
   text-align: left;
+  
+  ${mobile}{
+    font-size: 18px;
+  }
 `;
 
 export const Subtitle = styled.h3`
@@ -131,11 +195,22 @@ export const Subtitle = styled.h3`
   color: ${primaryColor};
   line-height: 30px;
   margin-block: 20px;
+
+    ${mobile}{
+    font-size: 34px;
+    line-height: 28px;
+  }
 `;
 
 export const CardTitle = styled(Subtitle)`
   color: ${white};
   font-size: 32px;
+  
+  ${mobile}{
+    font-size: 28px;
+    width: 80%;
+    text-align: left;
+  }
 `;
 
 export const RecentWorkCards = styled.div`
@@ -144,12 +219,23 @@ export const RecentWorkCards = styled.div`
   justify-content: space-between;
   margin-top: 4rem;
   width: 70%;
+
+
+  ${mobile}{
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+  }
 `;
 export const ProjectCard = styled.div`
   height: fit-content;
   background-color: ${white};
   padding-bottom: 25px;
   width: min-content;
+
+    ${mobile}{
+    margin-bottom: 2rem;
+  }
 `;
 export const ProjectImgContainer = styled.div`
   width: 367px;
@@ -194,6 +280,10 @@ export const WhatWeDo = styled.div`
   align-items: center;
   width: 100%;
   padding-block: 5rem;
+
+  ${mobile}{
+    height: fit-content;
+  }
 `;
 
 export const Service = styled.div`
@@ -203,12 +293,22 @@ export const Service = styled.div`
   height: 500px;
   flex-direction: column;
   width: 80%;
+
+  ${mobile}{
+    width: 90%;
+    height: fit-content;
+  }
 `;
 
 export const ServiceCardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${mobile}{
+    flex-direction: column;
+    height: 680px;
+  }
 `;
 
 export const ServiceCard = styled.div`
@@ -219,4 +319,9 @@ export const ServiceCard = styled.div`
   flex-direction: column;
   width: 36%;
   background-color: ${primaryColor};
+
+  ${mobile}{
+    width: 100%;
+    height: 20rem;
+  }
 `;
