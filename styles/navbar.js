@@ -42,6 +42,7 @@ export const NavLinks = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 65%;
+  font-size: 20px;
 
     ${mobile} {
     display: none;
