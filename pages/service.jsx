@@ -6,11 +6,11 @@ import Footer from "../components/footer/footer";
 import HeroImg from "../img/about.png";
 import {
   HeroContainer,
-  HeroTitle,
   HeroBtnContainer,
   TalkToUsBtn,
-  ImageWrap,
 } from "../styles/index";
+
+import { HeroTitle, ImageWrap } from "../styles/about";
 
 import {
   QuoteContainer,

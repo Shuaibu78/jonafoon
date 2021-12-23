@@ -113,6 +113,11 @@ export const SiteLink = styled.div`
   font-size: 48px;
   line-height: 110px;
   font-weight: 500;
+
+  ${mobile}{
+    font-size: 18px;
+    line-height: 70px;
+  }
 `;
 
 export const SocialLink = styled.div`
@@ -126,4 +131,9 @@ export const SocialLink = styled.div`
   font-size: 28px;
   line-height: 70px;
   font-weight: 500;
+
+    ${mobile}{
+    font-size: 16px;
+    line-height: 50px;
+  }
 `;

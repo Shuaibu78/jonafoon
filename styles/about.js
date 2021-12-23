@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { Colors, media } from "../components/constants/theme";
+import { Colors, media, FontSizes} from "../components/constants/theme";
 
 const { white, primaryColor, black } = Colors;
+const { titleFontSize } = FontSizes;
 const { mobile } = media;
 
 export const AboutWrapper = styled.section`
@@ -11,13 +12,71 @@ export const AboutWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   padding-block: 5rem;
+
+  ${mobile}{
+    padding-block: 2.5rem;
+  }
+`;
+
+export const ImageWrap = styled.span`
+  box-sizing: content-box;
+  width: 100%;
+
+  span {
+    width: inherit !important;
+    height: 82vh !important;
+  }
+
+  ${mobile}{
+    display: none;
+  }
+`;
+
+export const HeroTitle = styled.div`
+  position: absolute;
+  top: 310px;
+  left: 134px;
+  z-index: 2;
+  color: ${white};
+
+    h1{
+      font-size: 50px;
+      width: 510px;
+      height: 230px;
+    }
+
+    p {
+      font-size: ${titleFontSize};
+      width: 640px;
+      height: 80px;
+  }
+
+  ${mobile}{
+    position: initial;
+    top: 0;
+    left: 0;
+    color: ${black};
+    padding-top: 8rem;
+    margin-inline: 2rem;
+
+    p {
+      font-size: 18px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 38px;
+      width: 90%;
+      height: fit-content;
+    }
+  }
 `;
 
 export const AboutTitlecontainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const TeamTtleContainer = styled(AboutTitlecontainer)``;
@@ -27,6 +86,11 @@ export const SectionTitle = styled.h3`
   color: ${primaryColor};
   line-height: 36px;
   margin-block: 20px;
+
+  ${mobile}{
+    font-size: 32px;
+    line-height: 32px;
+  }
 `;
 
 export const AboutContentContainer = styled.div`
@@ -36,26 +100,47 @@ export const AboutContentContainer = styled.div`
   width: 70%;
   height: fit-content;
   margin-block: 150px;
+
+  ${mobile}{
+    width: 90%;
+    flex-direction: column;
+    margin-block: 50px;
+  }
 `;
 
 export const TeamMemberCardContainer = styled(AboutContentContainer)`
   width: 80%;
-    margin-block: 70px;
+  margin-block: 70px;
+
+  ${mobile}{
+    width: 90%;
+    margin-block: 50px;
+  }
 `;
 
 export const ContentCard = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   height: inherit;
+
+  ${mobile}{
+    width: 90%;
+  }
 `;
 
 export const TeamMember = styled(ContentCard)`
   width: 30%;
   height: 550px;
+  align-items: flex-start;
   background-color: ${white};
   box-shadow: 0px 2px 15px rgb(0 0 0 / 5%);
+
+  ${mobile}{
+    width: 90%;
+    margin-bottom: 20px;
+  }
 `;
 
 export const TeamMemberImage = styled.div`
@@ -80,13 +165,31 @@ export const CardTitle = styled(SectionTitle)`
   font-size: 32px;
 `;
 
+export const HeroSubTitle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 280px;
+
+  ${mobile}{
+    height: 120px;
+    justify-content: flex-start;
+  }
+`;
+
 export const CardContent = styled.p`
   margin-block: 10px;
   font-size: 22px;
   color: ${ black };
   line-height: 33px;
   width: 80%;
-  text-align: left;
+  text-align: center;
+
+  ${mobile}{
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
 `;
 
 export const TeamWrapper = styled.section`
@@ -101,7 +204,7 @@ export const TeamWrapper = styled.section`
 export const TeamMemberName = styled.p`
   line-height: 16px;
   font-size: 24px;
-  color: ${primaryColor};
+  color: ${black};
   font-weight: 500;
   text-align: left;
 `;

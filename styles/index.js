@@ -12,6 +12,7 @@ export const HeroContainer = styled.div`
 
   ${mobile}{
     background-color: #f8f8f8;
+    padding-bottom: 18px;
   }
 `;
 
@@ -49,7 +50,6 @@ export const HeroTitle = styled.div`
   }
 
   ${mobile}{
-    
     position: initial;
     top: 0;
     left: 0;
@@ -104,6 +104,12 @@ export const TalkToUsBtn = styled(ServiceBtn)`
   padding-inline: 12px;
   margin-top: 20px;
   border-radius: 8px;
+
+  ${mobile}{
+    width: 140px;
+    font-size: 18px;
+    height: 54px;
+  }
 `;
 
 export const ProjectBtn = styled.button`

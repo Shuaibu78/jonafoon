@@ -8,10 +8,8 @@ import Rectangle from "../img/Rectangle.png";
 import CEO from "../img/ceo.jpeg";
 import {
   HeroContainer,
-  HeroTitle,
   HeroBtnContainer,
   TalkToUsBtn,
-  ImageWrap,
 } from "../styles/index";
 
 import {
@@ -30,6 +28,9 @@ import {
   TeamMemberInfo,
   TeamMemberName,
   TeamMemberRole,
+  ImageWrap,
+  HeroTitle,
+  HeroSubTitle
 } from "../styles/about";
 
 const About = () => {
@@ -47,16 +48,9 @@ const About = () => {
           <Image src={HeroImg} alt="construction" />
         </ImageWrap>
         <HeroTitle>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-              height: "280px",
-            }}
-          >
+          <HeroSubTitle>
             <h1 style={{ height: "auto", margin: 0 }}>About The Company</h1>
-          </div>
+          </HeroSubTitle>
           <HeroBtnContainer>
             <TalkToUsBtn>Talk To Us</TalkToUsBtn>
           </HeroBtnContainer>

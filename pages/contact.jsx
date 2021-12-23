@@ -15,16 +15,16 @@ import {
 
 import {
   HeroContainer,
-  HeroTitle,
   HeroBtnContainer,
   TalkToUsBtn,
-  ImageWrap,
 } from "../styles/index";
 
 import {
   AboutWrapper,
   AboutTitlecontainer,
   SectionTitle,
+  HeroTitle,
+  ImageWrap,
 } from "../styles/about";
 
 const Contact = () => {
