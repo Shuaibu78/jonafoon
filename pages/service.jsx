@@ -10,7 +10,7 @@ import {
   TalkToUsBtn,
 } from "../styles/index";
 
-import { HeroTitle, ImageWrap } from "../styles/about";
+import { HeroTitle, ImageWrap, HeroSubTitle } from "../styles/about";
 
 import {
   QuoteContainer,
@@ -42,16 +42,9 @@ const Service = () => {
           <Image src={HeroImg} alt="construction" />
         </ImageWrap>
         <HeroTitle>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end",
-              height: "280px",
-            }}
-          >
+          <HeroSubTitle>
             <h1 style={{ height: "auto", margin: 0 }}>Our Services</h1>
-          </div>
+          </HeroSubTitle>
           <HeroBtnContainer>
             <TalkToUsBtn>Talk To Us</TalkToUsBtn>
           </HeroBtnContainer>

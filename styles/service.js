@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { Colors, FontSizes } from "../components/constants/theme";
+import { Colors, FontSizes, media } from "../components/constants/theme";
 
 const { white, primaryColor, black } = Colors;
 const { titleFontSize, secondaryFontSize } = FontSizes;
+const { mobile } = media;
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -23,6 +24,15 @@ export const QuoteContainer = styled.div`
     color: ${black};
     line-height: 36px;
   }
+
+  ${mobile}{
+    margin-block: 10px;
+
+    h3 {
+    font-size: 16px;
+    line-height: 24px;
+    }
+  }
 `;
 
 export const ProjectBtn = styled.button`
@@ -35,6 +45,12 @@ export const ProjectBtn = styled.button`
   width: 220px;
   height: 72px;
   cursor: pointer;
+
+  ${mobile}{
+    width: 150px;
+    height: 46px;
+    font-size: 14px;
+  }
 `;
 
 export const ConstructionWrapper = styled.div`
@@ -43,10 +59,18 @@ export const ConstructionWrapper = styled.div`
   justify-content: flex-end;
   width: 100%;
   margin-block: 5rem;
+
+  ${mobile}{
+    justify-content: center;
+  }
 `;
 
 export const IctWrapper = styled(ConstructionWrapper)`
   justify-content: flex-start;
+
+    ${mobile}{
+    justify-content: center;
+  }
 `;
 
 export const Construction = styled.div`
@@ -56,10 +80,22 @@ export const Construction = styled.div`
   width: 80%;
   background-color: #f8f8f8;
   padding: 4rem;
+
+  ${mobile}{
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
 `;
 
 export const IctService = styled(Construction)`
   align-items: flex-start;
+
+    ${mobile}{
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
 `;
 
 export const MainContent = styled.div`
@@ -86,12 +122,26 @@ export const MainService = styled.div`
     font-size: 18px;
     line-height: 33px;
   }
+
+${mobile}{
+  padding: 0.3rem;
+  width: 100%;
+
+  li {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
 `;
 
 export const Subtitle = styled.h3`
   font-size: 34px;
   color: ${black};
   line-height: 30px;
+
+  ${mobile}{
+    font-size: 20px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -101,4 +151,9 @@ export const Paragraph = styled.p`
   line-height: 33px;
   width: 55%;
   text-align: left;
+
+  ${mobile}{
+    font-size: 16px;
+    width: 100%;
+  }
 `;
