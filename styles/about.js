@@ -61,12 +61,12 @@ export const HeroTitle = styled.div`
 
     p {
       font-size: 18px;
-      width: 90%;
+      width: 80%;
     }
 
     h1 {
       font-size: 38px;
-      width: 90%;
+      width: 80%;
       height: fit-content;
     }
   }
@@ -77,6 +77,10 @@ export const AboutTitlecontainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  ${mobile}{
+    width: 80%;
+  }
 `;
 
 export const TeamTtleContainer = styled(AboutTitlecontainer)``;
@@ -88,7 +92,7 @@ export const SectionTitle = styled.h3`
   margin-block: 20px;
 
   ${mobile}{
-    font-size: 32px;
+    font-size: 20px;
     line-height: 32px;
   }
 `;
@@ -102,7 +106,7 @@ export const AboutContentContainer = styled.div`
   margin-block: 150px;
 
   ${mobile}{
-    width: 90%;
+    width: 80%;
     flex-direction: column;
     margin-block: 50px;
   }
@@ -113,8 +117,7 @@ export const TeamMemberCardContainer = styled(AboutContentContainer)`
   margin-block: 70px;
 
   ${mobile}{
-    width: 90%;
-    margin-block: 50px;
+    margin-block: 30px;
   }
 `;
 
@@ -126,7 +129,7 @@ export const ContentCard = styled.div`
   height: inherit;
 
   ${mobile}{
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -138,8 +141,8 @@ export const TeamMember = styled(ContentCard)`
   box-shadow: 0px 2px 15px rgb(0 0 0 / 5%);
 
   ${mobile}{
-    width: 90%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 40px;
   }
 `;
 
@@ -163,6 +166,10 @@ export const TeamMemberInfo = styled.div`
 export const CardTitle = styled(SectionTitle)`
   color: ${black};
   font-size: 32px;
+
+  ${mobile}{
+    font-size: 18px;
+  }
 `;
 
 export const HeroSubTitle = styled.div`
@@ -172,6 +179,11 @@ export const HeroSubTitle = styled.div`
   height: 280px;
 
   ${mobile}{
+    h1 {
+      font-size: 30px;
+      width: 48%;
+    }
+
     height: 120px;
     justify-content: flex-start;
   }
@@ -187,7 +199,7 @@ export const CardContent = styled.p`
 
   ${mobile}{
     width: 100%;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 28px;
   }
 `;
@@ -199,6 +211,10 @@ export const TeamWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   padding-block: 5rem;
+
+  ${mobile}{
+  padding-block: 3rem;
+  }
 `;
 
 export const TeamMemberName = styled.p`
@@ -207,6 +223,10 @@ export const TeamMemberName = styled.p`
   color: ${black};
   font-weight: 500;
   text-align: left;
+
+  ${mobile}{
+  font-size: 20px;
+  }
 `;
 
 export const TeamMemberRole = styled.p`
@@ -214,4 +234,8 @@ export const TeamMemberRole = styled.p`
   font-size: 18px;
   color: ${black};
   text-align: left;
+
+  ${mobile}{
+    font-size: 16px;
+  }
 `;
