@@ -58,13 +58,13 @@ export const HeroTitle = styled.div`
     margin-inline: 2rem;
 
     p {
-      font-size: 18px;
-      width: 90%;
+      font-size: 16px;
+      width: 80%;
     }
 
     h1 {
-      font-size: 38px;
-      width: 90%;
+      font-size: 30px;
+      width: 80%;
       height: fit-content;
     }
   }
@@ -77,7 +77,7 @@ export const HeroBtnContainer = styled.div`
   width: 430px;
 
   ${mobile}{
-    width: 90%;
+    width: 80%;
   }
 `;
 
@@ -93,7 +93,9 @@ export const ServiceBtn = styled.button`
   cursor: pointer;
 
   ${mobile}{
-    width: 40%;
+    width: 45%;
+    height: 54px;
+    font-size: 14px;
   }
 `;
 
@@ -107,7 +109,7 @@ export const TalkToUsBtn = styled(ServiceBtn)`
 
   ${mobile}{
     width: 140px;
-    font-size: 18px;
+    font-size: 14px;
     height: 54px;
   }
 `;
@@ -124,7 +126,9 @@ export const ProjectBtn = styled.button`
   cursor: pointer;
 
     ${mobile}{
-    width: 40%;
+    width: 45%;
+    height: 54px;
+    font-size: 14px;
   }
 `;
 
@@ -132,7 +136,8 @@ export const CardBtn = styled(ProjectBtn)`
   width: 150px;
   height: 54px;
   border: 1px solid ${primaryColor};
-  color: ${primaryColor};
+  background-color: ${primaryColor};
+  color: ${white};
 `;
 
 export const RecentWorkContainer = styled.div`
@@ -151,7 +156,7 @@ export const RecentWorkWrapper = styled.div`
   justify-content: space-between;
 
     ${mobile}{
-    width: 90%;
+    width: 80%;
     height: fit-content;
   }
 `;
@@ -165,8 +170,8 @@ export const Paragraph = styled.p`
   text-align: center;
 
   ${mobile}{
-    width: 90%;
-    font-size: 18px;
+    width: 80%;
+    font-size: 16px;
     line-height: 28px;
   }
 `;
@@ -179,9 +184,10 @@ export const TitleDescription = styled.p`
   width: 50%;
 
   ${mobile}{
-    width: 90%;
-    font-size: 22px;
-    line-height: 30px;
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -192,7 +198,7 @@ export const CardParagraph = styled(Paragraph)`
   text-align: left;
   
   ${mobile}{
-    font-size: 18px;
+    font-size: 14px;
   }
 `;
 
@@ -203,8 +209,8 @@ export const Subtitle = styled.h3`
   margin-block: 20px;
 
     ${mobile}{
-    font-size: 34px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 22px;
   }
 `;
 
@@ -213,7 +219,7 @@ export const CardTitle = styled(Subtitle)`
   font-size: 32px;
   
   ${mobile}{
-    font-size: 28px;
+    font-size: 18px;
     width: 80%;
     text-align: left;
   }
@@ -229,10 +235,11 @@ export const RecentWorkCards = styled.div`
 
   ${mobile}{
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     height: fit-content;
   }
 `;
+
 export const ProjectCard = styled.div`
   height: fit-content;
   background-color: ${white};
@@ -243,10 +250,12 @@ export const ProjectCard = styled.div`
     margin-bottom: 2rem;
   }
 `;
+
 export const ProjectImgContainer = styled.div`
   width: 367px;
   height: 236px;
 `;
+
 export const ProjectDetails = styled.div`
   padding-inline: 30px;
 
@@ -262,6 +271,16 @@ export const ProjectDetails = styled.div`
     line-height: 30px;
   }
 
+  ${mobile}{
+    h6{
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
 `;
 
 export const HowWeWorkwrapper = styled.div`
@@ -270,6 +289,10 @@ export const HowWeWorkwrapper = styled.div`
   align-items: center;
   width: 100%;
   padding-block: 5rem;
+
+  ${mobile}{
+    padding-block: 3rem;
+  }
 `;
 
 export const WorkContainer = styled.div`
@@ -289,6 +312,7 @@ export const WhatWeDo = styled.div`
 
   ${mobile}{
     height: fit-content;
+    padding-block: 3rem;
   }
 `;
 
@@ -301,7 +325,7 @@ export const Service = styled.div`
   width: 80%;
 
   ${mobile}{
-    width: 90%;
+    width: 80%;
     height: fit-content;
   }
 `;
