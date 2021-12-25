@@ -66,19 +66,17 @@ const About = () => {
           <ContentCard>
             <CardTitle>Mission</CardTitle>
             <CardContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              At Jonafoon our mission is to ensure delivery of quality
+              professional services abiding to high ethical standards with
+              state- of-the-art technology and use of appropriate expertise and
+              partnerships.
             </CardContent>
           </ContentCard>
           <ContentCard>
             <CardTitle>Vission</CardTitle>
             <CardContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              To be the most technological driven and advanced construction,
+              engineering, and project management organization in Africa.uat.
             </CardContent>
           </ContentCard>
         </AboutContentContainer>
@@ -91,10 +89,10 @@ const About = () => {
         <TeamMemberCardContainer>
           <TeamMember>
             <TeamMemberImage>
-              <Image src={CEO} alt="chief executive officer" />
+              <Image src={CEO} alt="Bolaji" />
             </TeamMemberImage>
             <TeamMemberInfo>
-              <TeamMemberName>John Smith</TeamMemberName>
+              <TeamMemberName>Bolaji Owupe</TeamMemberName>
               <TeamMemberRole>Chief Executive Officer</TeamMemberRole>
             </TeamMemberInfo>
           </TeamMember>
@@ -109,11 +107,11 @@ const About = () => {
           </TeamMember>
           <TeamMember>
             <TeamMemberImage>
-              <Image src={CEO} alt="chief executive officer" />
+              <Image src={CEO} alt="Zakari" />
             </TeamMemberImage>
             <TeamMemberInfo>
-              <TeamMemberName>John Smith</TeamMemberName>
-              <TeamMemberRole>Chief Executive Officer</TeamMemberRole>
+              <TeamMemberName>Zakari .O. Osuman</TeamMemberName>
+              <TeamMemberRole>Cybersecurity - Specialist</TeamMemberRole>
             </TeamMemberInfo>
           </TeamMember>
         </TeamMemberCardContainer>

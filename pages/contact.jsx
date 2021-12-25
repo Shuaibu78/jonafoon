@@ -56,16 +56,15 @@ const Contact = () => {
         <AboutTitlecontainer>
           <SectionTitle>Get In Touch Today</SectionTitle>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            Let's partner to solve real world problems that will help you reach
+            your goal. We provide the awesome services you need.
           </Paragraph>
         </AboutTitlecontainer>
         <AboutContentContainer>
           <ContentCard>
             <CardIcon>
               <svg
-                style={{ width: "80px", height: "80px" }}
+                style={{ width: "80px", height: "80px", color: "#0083C4" }}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -81,14 +80,17 @@ const Contact = () => {
             </CardIcon>
             <CardTitle>Visit Us</CardTitle>
             <CardContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p>Abuja Office: 12B Excel Estate Apo, FCT-Abuja, Nigeria.</p>
+              <p>
+                Lagos Office: 16, Allbu Street, Surelere Off Vode Thomas, Lagos
+                State
+              </p>
             </CardContent>
           </ContentCard>
           <ContentCard>
             <CardIcon>
               <svg
-                style={{ width: "80px", height: "80px" }}
+                style={{ width: "80px", height: "80px", color: "#0083C4" }}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -104,14 +106,15 @@ const Contact = () => {
             </CardIcon>
             <CardTitle>Call Us</CardTitle>
             <CardContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p>+234 (0) 803 628 7842</p>
+              <p>+234 (0) 812 376 0225</p>
+              <p>+234 (0) 818 054 6425</p>
             </CardContent>
           </ContentCard>
           <ContentCard>
             <CardIcon>
               <svg
-                style={{ width: "80px", height: "80px" }}
+                style={{ width: "80px", height: "80px", color: "#0083C4" }}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -127,8 +130,10 @@ const Contact = () => {
             </CardIcon>
             <CardTitle>Email Us</CardTitle>
             <CardContent>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p>Ready to start a project with us?</p>
+              <span>
+                <a href="mailto:info@jonafoon.com">Info@jonafoon.com</a>
+              </span>
             </CardContent>
           </ContentCard>
         </AboutContentContainer>

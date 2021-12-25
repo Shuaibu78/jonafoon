@@ -46,7 +46,7 @@ export const HeroTitle = styled.div`
     p {
       font-size: ${titleFontSize};
       width: 640px;
-      height: 80px;
+      height: fit-content;
   }
 
   ${mobile}{
@@ -75,9 +75,11 @@ export const HeroBtnContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 430px;
+  margin-top: 30px;
 
   ${mobile}{
     width: 80%;
+    margin-top: 10px;
   }
 `;
 

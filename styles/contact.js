@@ -85,7 +85,11 @@ export const CardContent = styled.p`
   color: ${black};
   line-height: 34px;
   width: 80%;
-  text-align: justify;
+  text-align: center;
+
+    span > a {
+    text-decoration: underline;
+  }
 
     ${media.mobile}{
     font-size: 16px;
@@ -93,5 +97,9 @@ export const CardContent = styled.p`
     width: 100%;
     margin-block: 5px;
     text-align: center;
+
+    p {
+      margin: 0px;
+    }
   }
 `;

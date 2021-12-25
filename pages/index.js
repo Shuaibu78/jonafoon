@@ -1,5 +1,6 @@
 import React from "react";
 import Head from 'next/head';
+import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
@@ -27,10 +28,14 @@ export default function Home() {
         </ImageWrap>
         <HeroTitle>
           <h1>We Provide Effective World Class Solutions!</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          <p>We are a multi-engineering company that has developed an enviable reputation for customer service and satisfaction.</p>
           <HeroBtnContainer>
-            <ServiceBtn>Our Services</ServiceBtn>
-            <ProjectBtn>Recent Projects</ProjectBtn>
+            <Link href="#service">
+              <ServiceBtn>Our Services</ServiceBtn>
+            </Link>
+            <Link href="#project">
+              <ProjectBtn>Recent Projects</ProjectBtn>
+            </Link>
           </HeroBtnContainer>
         </HeroTitle>
       </HeroContainer>
@@ -38,7 +43,7 @@ export default function Home() {
       <RecentWorkContainer id="project">
         <RecentWorkWrapper>
           <Subtitle>Our Recent Works</Subtitle>
-          <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Paragraph>
+          <Paragraph>At the heart of every project we work on is the urge to solve real problems for our customers. These are some of our recent projects.</Paragraph>
         </RecentWorkWrapper>
         <RecentWorkCards>
           <ProjectCard>
