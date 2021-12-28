@@ -56,8 +56,8 @@ const Contact = () => {
         <AboutTitlecontainer>
           <SectionTitle>Get In Touch Today</SectionTitle>
           <Paragraph>
-            Let's partner to solve real world problems that will help you reach
-            your goal. We provide the awesome services you need.
+            Let`&#39;`s partner to solve real world problems that will help you
+            reach your goal. We provide the awesome services you need.
           </Paragraph>
         </AboutTitlecontainer>
         <AboutContentContainer>

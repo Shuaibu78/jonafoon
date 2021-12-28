@@ -34,17 +34,17 @@ const Footer = () => {
           <TagWrapper>
             <Subtitle>FOLLOW US</Subtitle>
             <SocialIcons>
-              <Link href="/">
+              <Link href="/" passHref>
                 <a>
                   <Image src={Facebook} alt="facebook" />
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/" passHref>
                 <a>
                   <Image src={Instagram} alt="instagram" />
                 </a>
               </Link>{" "}
-              <Link href="/">
+              <Link href="/" passHref>
                 <a>
                   <Image src={LinkedIn} alt="linkedin" />
                 </a>
@@ -54,16 +54,16 @@ const Footer = () => {
           <TagWrapper>
             <Subtitle>Quick Links</Subtitle>
             <Links>
-              <Link href="/">
+              <Link href="/" passHref>
                 <a>Home</a>
               </Link>
-              <Link href="/about">
+              <Link href="/about" passHref>
                 <a>About Us</a>
               </Link>
-              <Link href="/contact">
+              <Link href="/contact" passHref>
                 <a>Contact Us</a>
               </Link>
-              <Link href="/service">
+              <Link href="/service" passHref>
                 <a>Our Services</a>
               </Link>
             </Links>

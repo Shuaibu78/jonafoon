@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 import HeroImg from "../img/about.png";
@@ -52,7 +53,12 @@ const About = () => {
             <h1 style={{ height: "auto", margin: 0 }}>About The Company</h1>
           </HeroSubTitle>
           <HeroBtnContainer>
-            <TalkToUsBtn>Talk To Us</TalkToUsBtn>
+            <Link
+              href="https://tawk.to/chat/61bfbc36c82c976b71c22f51/1fnafedev"
+              passHref
+            >
+              <TalkToUsBtn>Talk To Us</TalkToUsBtn>
+            </Link>
           </HeroBtnContainer>
         </HeroTitle>
       </HeroContainer>

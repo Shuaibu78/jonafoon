@@ -28,7 +28,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <LogoWrapper>
-          <Link href="/">
+          <Link href="/" passHref>
             <a>
               <Image src={Logo} alt="Jonafoon" width={100} height={70} />
             </a>
@@ -36,13 +36,13 @@ const Navbar = () => {
         </LogoWrapper>
         <NavLinkWrapper>
           <NavLinks>
-            <Link href="#project">
+            <Link href="#project" passHref>
               <a>Project</a>
             </Link>
-            <Link href="#process">
+            <Link href="#process" passHref>
               <a>How We Work</a>
             </Link>
-            <Link href="#services">
+            <Link href="#services" passHref>
               <a>Services</a>
             </Link>
           </NavLinks>
@@ -88,30 +88,33 @@ const Navbar = () => {
               </CancelBtn>
               <QuickLinks>
                 <SiteLink>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <a onClick={handleNavChange}>Home</a>
                   </Link>
-                  <Link href="/about">
+                  <Link href="/about" passHref>
                     <a onClick={handleNavChange}>About Us</a>
                   </Link>
-                  <Link href="/contact">
+                  <Link href="/contact" passHref>
                     <a onClick={handleNavChange}>Contact Us</a>
                   </Link>
-                  <Link href="/service">
+                  <Link href="/service" passHref>
                     <a onClick={handleNavChange}>Our Services</a>
                   </Link>{" "}
-                  <Link href="/">
+                  <Link
+                    href="https://tawk.to/chat/61bfbc36c82c976b71c22f51/1fnafedev"
+                    passHref
+                  >
                     <a style={{ textDecoration: "underline" }}>Talk To Us</a>
                   </Link>
                 </SiteLink>
                 <SocialLink>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <a>Facebook</a>
                   </Link>
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <a>Instagram</a>
                   </Link>{" "}
-                  <Link href="/">
+                  <Link href="/" passHref>
                     <a>LinkedIn</a>
                   </Link>
                 </SocialLink>

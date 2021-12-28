@@ -2,7 +2,10 @@ import React from "react";
 import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
+import tawkTo from "tawkto-react";
+
 import Navbar from "../components/navbar/navbar";
+
 import Footer from "../components/footer/footer";
 import HeroImg from "../img/hero.png";
 import Project1 from "../img/project1.png";
@@ -11,6 +14,13 @@ import Project3 from "../img/project3.png";
 import { HeroContainer, HeroTitle, HeroBtnContainer, ServiceBtn, ProjectBtn, RecentWorkContainer, RecentWorkWrapper, RecentWorkCards, ProjectCard, ProjectImgContainer, ProjectDetails, CardBtn, HowWeWorkwrapper, WorkContainer, Subtitle, Paragraph, TalkToUsBtn, WhatWeDo, Service, ServiceCardContainer, ServiceCard, CardTitle, CardParagraph, TitleDescription, ImageWrap} from "../styles/index";
 
 export default function Home() {
+
+  // Direct Chat Link
+  // https://tawk.to/chat/tawkToPropertyId/tawkToKey
+
+  React.useEffect(() => {
+    tawkTo("61bfbc36c82c976b71c22f51", "832a5b38dc0348776559dc2045ecf7d12de62fa8")
+  }, []);
 
   return (
     <div>
@@ -30,10 +40,10 @@ export default function Home() {
           <h1>We Provide Effective World Class Solutions!</h1>
           <p>We are a multi-engineering company that has developed an enviable reputation for customer service and satisfaction.</p>
           <HeroBtnContainer>
-            <Link href="#service">
+            <Link href="#service" passHref>
               <ServiceBtn>Our Services</ServiceBtn>
             </Link>
-            <Link href="#project">
+            <Link href="#project" passHref>
               <ProjectBtn>Recent Projects</ProjectBtn>
             </Link>
           </HeroBtnContainer>
@@ -83,7 +93,9 @@ export default function Home() {
         <WorkContainer>
           <Subtitle>How We Work</Subtitle>
           <Paragraph>We listen to you and provide effective solutions that bridges the gap between your goals and the need of your customers</Paragraph>
-          <TalkToUsBtn>Talk To Us</TalkToUsBtn>
+          <Link href="https://tawk.to/chat/61bfbc36c82c976b71c22f51/1fnafedev" passHref>
+            <TalkToUsBtn>Talk To Us</TalkToUsBtn>
+          </Link>
         </WorkContainer>
       </HowWeWorkwrapper>
 
