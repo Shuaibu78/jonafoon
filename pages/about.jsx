@@ -79,10 +79,10 @@ const About = () => {
             </CardContent>
           </ContentCard>
           <ContentCard>
-            <CardTitle>Vission</CardTitle>
+            <CardTitle>Vision</CardTitle>
             <CardContent>
               To be the most technological driven and advanced construction,
-              engineering, and project management organization in Africa.uat.
+              engineering, and project management organization in Africa by abiding to ethical standards and use of appropriate expertise.
             </CardContent>
           </ContentCard>
         </AboutContentContainer>
