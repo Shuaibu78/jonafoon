@@ -33,7 +33,7 @@ const Navbar = ({ internalLinks }) => {
           </Link>
         </LogoWrapper>
         <NavLinkWrapper>
-          <NavLinks>
+          <NavLinks key={link.value}>
             {internalLinks.map((link) => {
               return (
                 <Link href={link.href} passHref>
