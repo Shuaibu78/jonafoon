@@ -28,6 +28,13 @@ import {
 } from "../styles/service";
 
 const Service = () => {
+
+    const internalLinks = [
+      { href: "#construction", value: "Construction" },
+      { href: "#ict", value: "ICT" },
+      { href: "/contact", value: "Contact" },
+    ];
+  
   return (
     <div>
       <Head>
@@ -42,7 +49,7 @@ const Service = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar internalLinks={internalLinks} />
 
       <HeroContainer>
         <ImageWrap>
@@ -65,7 +72,7 @@ const Service = () => {
         </QuoteContainer>
       </Wrapper>
 
-      <ConstructionWrapper>
+      <ConstructionWrapper id="Construction">
         <Construction>
           <MainContent>
             <Subtitle>Building Construction and Repair</Subtitle>
@@ -102,7 +109,7 @@ const Service = () => {
         </Construction>
       </ConstructionWrapper>
 
-      <IctWrapper>
+      <IctWrapper id="ict">
         <IctService>
           <MainContent>
             <Subtitle>Information and Communication Technology</Subtitle>

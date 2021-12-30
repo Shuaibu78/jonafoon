@@ -7,6 +7,7 @@ import Footer from "../components/footer/footer";
 import HeroImg from "../img/about.png";
 import Rectangle from "../img/Rectangle.png";
 import CEO from "../img/ceo.jpeg";
+import Kenneth from "../img/sound.JPG";
 import {
   HeroContainer,
   HeroBtnContainer,
@@ -35,6 +36,11 @@ import {
 } from "../styles/about";
 
 const About = () => {
+  const internalLinks = [
+    { href: "#mission", value: "Mission" },
+    { href: "#team", value: "Team Members" },
+    { href: "/service", value: "What We Do" },
+  ];
   return (
     <div>
       <Head>
@@ -49,7 +55,7 @@ const About = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar internalLinks={internalLinks} />
 
       <HeroContainer>
         <ImageWrap>
@@ -70,7 +76,7 @@ const About = () => {
         </HeroTitle>
       </HeroContainer>
 
-      <AboutWrapper>
+      <AboutWrapper id="mission">
         <AboutTitlecontainer>
           <SectionTitle>About Jonafoon</SectionTitle>
           <Image src={Rectangle} alt="rectangle" />
@@ -96,7 +102,7 @@ const About = () => {
         </AboutContentContainer>
       </AboutWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="team">
         <TeamTtleContainer>
           <SectionTitle>Our Team</SectionTitle>
         </TeamTtleContainer>
@@ -112,11 +118,11 @@ const About = () => {
           </TeamMember>
           <TeamMember>
             <TeamMemberImage>
-              <Image src={CEO} alt="chief executive officer" />
+              <Image src={Kenneth} alt="sys admin" />
             </TeamMemberImage>
             <TeamMemberInfo>
-              <TeamMemberName>John Smith</TeamMemberName>
-              <TeamMemberRole>Chief Executive Officer</TeamMemberRole>
+              <TeamMemberName>Kenneth Nwankwo</TeamMemberName>
+              <TeamMemberRole>Systems Administrator</TeamMemberRole>
             </TeamMemberInfo>
           </TeamMember>
           <TeamMember>

@@ -25,6 +25,13 @@ import {
 } from "../styles/about";
 
 const Contact = () => {
+
+    const internalLinks = [
+      { href: "/", value: "Home" },
+      { href: "#contact", value: "Contact Us " },
+      { href: "/about", value: "About Us" },
+    ];
+  
   return (
     <div>
       <Head>
@@ -39,7 +46,7 @@ const Contact = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar internalLinks={internalLinks} />
 
       <HeroContainer>
         <ImageWrap>
@@ -55,7 +62,7 @@ const Contact = () => {
         </HeroTitle>
       </HeroContainer>
 
-      <AboutWrapper>
+      <AboutWrapper id="contact">
         <AboutTitlecontainer>
           <SectionTitle>Get In Touch Today</SectionTitle>
           <Paragraph>

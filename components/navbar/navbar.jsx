@@ -18,10 +18,8 @@ import Logo from "../../img/logo.png";
 import {useState} from "react";
 
 
-const Navbar = () => {
-
+const Navbar = ({ internalLinks }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const handleNavChange = () => setIsOpen(!isOpen);
 
   return (
@@ -36,15 +34,13 @@ const Navbar = () => {
         </LogoWrapper>
         <NavLinkWrapper>
           <NavLinks>
-            <Link href="#project" passHref>
-              <a>Project</a>
-            </Link>
-            <Link href="#process" passHref>
-              <a>How We Work</a>
-            </Link>
-            <Link href="#services" passHref>
-              <a>Services</a>
-            </Link>
+            {internalLinks.map((link) => {
+              return (
+                <Link href={link.href} passHref>
+                  <a>{link.value}</a>
+                </Link>
+              );
+            })}
           </NavLinks>
           <div>
             <HamburgerButton type="button" onClick={handleNavChange}>
@@ -125,6 +121,6 @@ const Navbar = () => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 export default Navbar

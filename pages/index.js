@@ -22,6 +22,13 @@ export default function Home() {
     tawkTo("61bfbc36c82c976b71c22f51", "832a5b38dc0348776559dc2045ecf7d12de62fa8")
   }, []);
 
+
+  const internalLinks = [
+    { href: "#project", value: "Project" },
+    { href: "#process", value: "Process" },
+    { href: "#services", value: "Services" },
+  ];
+
   return (
     <div>
       <Head>
@@ -30,7 +37,7 @@ export default function Home() {
         <meta name="keywords" content="Jonafoon, Jonafoon Nigeria Limited, ICT, construction" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar internalLinks={internalLinks} />
 
       <HeroContainer>
         <ImageWrap>
@@ -40,7 +47,7 @@ export default function Home() {
           <h1>We Provide Effective World Class Solutions!</h1>
           <p>We are a multi-engineering company that has developed an enviable reputation for customer service and satisfaction.</p>
           <HeroBtnContainer>
-            <Link href="#service" passHref>
+            <Link href="#services" passHref>
               <ServiceBtn>Our Services</ServiceBtn>
             </Link>
             <Link href="#project" passHref>
