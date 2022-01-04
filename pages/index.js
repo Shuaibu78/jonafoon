@@ -68,9 +68,9 @@ export default function Home() {
               <Image src={Project1} alt="work" />
             </ProjectImgContainer>
             <ProjectDetails>
-              <h6>Project Name</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-              <CardBtn>Explore More</CardBtn>
+              <h6>CBN - Training</h6>
+              <p>Deployed the training for data protection and regulation based on the data protection act developed by NITDA</p>
+              {/* <CardBtn>Explore More</CardBtn> */}
             </ProjectDetails>
           </ProjectCard>
           <ProjectCard>
@@ -78,9 +78,9 @@ export default function Home() {
               <Image src={Project2} alt="work" />
             </ProjectImgContainer>
             <ProjectDetails>
-              <h6>Project Name</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-              <CardBtn>Explore More</CardBtn>
+              <h6>NCC - Toolkit Generation</h6>
+              <p>Generated toolkit for the identification and transition of emerging technologies during covid pandemic outbreak</p>
+              {/* <CardBtn>Explore More</CardBtn> */}
             </ProjectDetails>
           </ProjectCard>
           <ProjectCard>
@@ -88,9 +88,9 @@ export default function Home() {
               <Image src={Project3} alt="work" />
             </ProjectImgContainer>
             <ProjectDetails>
-              <h6>Project Name</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-              <CardBtn>Explore More</CardBtn>
+              <h6>FIRS - Training</h6>
+              <p>Deployed Cyber security training in order to teach about how protect systems, networks, programs, devices and data from cyber attacks</p>
+              {/* <CardBtn>Explore More</CardBtn> */}
             </ProjectDetails>
           </ProjectCard>
         </RecentWorkCards>

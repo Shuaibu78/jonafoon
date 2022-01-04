@@ -7,7 +7,8 @@ import Footer from "../components/footer/footer";
 import HeroImg from "../img/about.png";
 import Rectangle from "../img/Rectangle.png";
 import CEO from "../img/ceo.jpeg";
-import Kenneth from "../img/sound.JPG";
+import Kenneth from "../img/sound.jpeg";
+import Zakari from "../img/zakari.jpeg";
 import {
   HeroContainer,
   HeroBtnContainer,
@@ -127,7 +128,7 @@ const About = () => {
           </TeamMember>
           <TeamMember>
             <TeamMemberImage>
-              <Image src={CEO} alt="Zakari" />
+              <Image src={Zakari} alt="Zakari" />
             </TeamMemberImage>
             <TeamMemberInfo>
               <TeamMemberName>Zakari .O. Osuman</TeamMemberName>
