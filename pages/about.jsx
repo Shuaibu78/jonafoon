@@ -113,7 +113,7 @@ const About = () => {
               <Image src={CEO} alt="Bolaji" />
             </TeamMemberImage>
             <TeamMemberInfo>
-              <TeamMemberName>Bolaji Owupe</TeamMemberName>
+              <TeamMemberName>Bolaji Owope</TeamMemberName>
               <TeamMemberRole>Chief Executive Officer</TeamMemberRole>
             </TeamMemberInfo>
           </TeamMember>
