@@ -89,7 +89,7 @@ export default function Home() {
             </ProjectImgContainer>
             <ProjectDetails>
               <h6>FIRS - Training</h6>
-              <p>Deployed Cyber security training in order to teach about how protect systems, networks, programs, devices and data from cyber attacks</p>
+              <p>Deployed Cyber security training in order to teach about how to protect systems, networks, programs, devices and data from cyber attacks</p>
               {/* <CardBtn>Explore More</CardBtn> */}
             </ProjectDetails>
           </ProjectCard>
