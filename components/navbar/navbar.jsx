@@ -33,7 +33,7 @@ const Navbar = ({ internalLinks }) => {
           </Link>
         </LogoWrapper>
         <NavLinkWrapper>
-          <NavLinks >
+          <NavLinks>
             {internalLinks.map((link) => {
               return (
                 <Link key={link.value} href={link.href} passHref>
@@ -104,14 +104,17 @@ const Navbar = ({ internalLinks }) => {
                   </Link>
                 </SiteLink>
                 <SocialLink>
-                  <Link href="/" passHref>
-                    <a>Facebook</a>
+                  <Link href="https://www.facebook.com/Jonafoonltd" passHref>
+                    <a target="_blank">Facebook</a>
                   </Link>
-                  <Link href="/" passHref>
-                    <a>Instagram</a>
+                  <Link href="https://www.instagram.com/jonafoonltd" passHref>
+                    <a target="_blank">Instagram</a>
                   </Link>{" "}
-                  <Link href="/" passHref>
-                    <a>LinkedIn</a>
+                  <Link
+                    href="https://www.linkedin.com/company/jonafoon-ltd"
+                    passHref
+                  >
+                    <a target="_blank">LinkedIn</a>
                   </Link>
                 </SocialLink>
               </QuickLinks>

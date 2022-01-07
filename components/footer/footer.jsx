@@ -34,18 +34,21 @@ const Footer = () => {
           <TagWrapper>
             <Subtitle>FOLLOW US</Subtitle>
             <SocialIcons>
-              <Link href="/" passHref>
-                <a>
+              <Link href="https://www.facebook.com/Jonafoonltd" passHref>
+                <a target="_blank">
                   <Image src={Facebook} alt="facebook" />
                 </a>
               </Link>
-              <Link href="/" passHref>
-                <a>
+              <Link href="https://www.instagram.com/jonafoonltd" passHref>
+                <a target="_blank">
                   <Image src={Instagram} alt="instagram" />
                 </a>
               </Link>{" "}
-              <Link href="/" passHref>
-                <a>
+              <Link
+                href="https://www.linkedin.com/company/jonafoon-ltd"
+                passHref
+              >
+                <a target="_blank">
                   <Image src={LinkedIn} alt="linkedin" />
                 </a>
               </Link>
