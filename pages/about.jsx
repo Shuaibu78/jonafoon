@@ -114,7 +114,7 @@ const About = () => {
             </TeamMemberImage>
             <TeamMemberInfo>
               <TeamMemberName>Bolaji Owope</TeamMemberName>
-              <TeamMemberRole>Chief Executive Officer</TeamMemberRole>
+              <TeamMemberRole>Chief Operating Officer</TeamMemberRole>
             </TeamMemberInfo>
           </TeamMember>
           <TeamMember>

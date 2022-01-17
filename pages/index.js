@@ -7,7 +7,7 @@ import tawkTo from "tawkto-react";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 
-import HeroImg from "../img/hero.png";
+import HeroImg from "../img/home.png";
 import Project1 from "../img/project1.png";
 import Project2 from "../img/project2.png";
 import Project3 from "../img/project3.png";

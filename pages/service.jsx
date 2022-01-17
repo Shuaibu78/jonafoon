@@ -72,7 +72,7 @@ const Service = () => {
         </QuoteContainer>
       </Wrapper>
 
-      <ConstructionWrapper id="Construction">
+      <ConstructionWrapper id="construction">
         <Construction>
           <MainContent>
             <Subtitle>Building Construction and Repair</Subtitle>

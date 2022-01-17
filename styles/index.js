@@ -23,6 +23,7 @@ export const ImageWrap = styled.span`
   span {
     width: inherit !important;
     background-color: black;
+    margin-top: 100px !important;
   }
 
       ${mobile}{
@@ -32,7 +33,7 @@ export const ImageWrap = styled.span`
 
 export const HeroTitle = styled.div`
   position: absolute;
-  top: 110px;
+  top: 250px;
   left: 134px;
   z-index: 2;
   color: ${white};
