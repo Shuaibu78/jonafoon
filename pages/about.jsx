@@ -40,7 +40,7 @@ const About = () => {
   const internalLinks = [
     { href: "#mission", value: "Mission" },
     { href: "#team", value: "Team Members" },
-    { href: "../img/Jonafoon_brochure.pdf", value: "Brochure" },
+    { href: "../img/brochure.pdf", value: "Brochure" },
   ];
   return (
     <div>
