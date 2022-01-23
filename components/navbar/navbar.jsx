@@ -35,11 +35,17 @@ const Navbar = ({ internalLinks }) => {
         <NavLinkWrapper>
           <NavLinks>
             {internalLinks.map((link) => {
-              return (
-                <Link key={link.value} href={link.href} passHref>
-                  <a>{link.value}</a>
-                </Link>
-              );
+              if (link.value !== "Brochure") {
+                return (
+                  <Link key={link.value} href={link.href} passHref>
+                    <a>{link.value}</a>
+                  </Link>
+                )
+              } else {
+                return (
+                  <a key={link.value} href={link.href} download="Jonafoon-Brochure.pdf">{link.value}</a>
+                )
+              }
             })}
           </NavLinks>
           <div>
@@ -75,7 +81,7 @@ const Navbar = ({ internalLinks }) => {
                   >
                     <path
                       strokeLinecap="round"
-                      strokeLineJoin="round"
+                      strokeLinejoin="round"
                       strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     ></path>

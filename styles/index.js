@@ -48,6 +48,7 @@ export const HeroTitle = styled.div`
       font-size: ${titleFontSize};
       width: 640px;
       height: fit-content;
+      font-weight: medium;
   }
 
   ${mobile}{
