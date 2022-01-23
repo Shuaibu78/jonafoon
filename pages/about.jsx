@@ -40,7 +40,10 @@ const About = () => {
   const internalLinks = [
     { href: "#mission", value: "Mission" },
     { href: "#team", value: "Team Members" },
-    { href: "../img/brochure.pdf", value: "Brochure" },
+    {
+      href: "https://drive.google.com/file/d/1CvgiOCyv8N7-nEHQb53sgLWIfOcNSOeJ/view?usp=sharing",
+      value: "Brochure",
+    },
   ];
   return (
     <div>
