@@ -7,7 +7,7 @@ const { mobile } = media;
 
 export const Wrapper = styled.div`
   width: 100%;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 `;

@@ -45,7 +45,7 @@ export default function Home() {
         </ImageWrap>
         <HeroTitle>
           <h1>We Provide Effective World Class Solutions!</h1>
-          <p>We are a multi-engineering company that has developed an enviable reputation for customer service and satisfaction.</p>
+          <p>We are a group of companies  with over 35 years of track records in Construction, ICT, Consultancy and Project management. Established in 1982, we have developed an enviable reputation for customer service and satisfaction.</p>
           <HeroBtnContainer>
             <Link href="#services" passHref>
               <ServiceBtn>Our Services</ServiceBtn>

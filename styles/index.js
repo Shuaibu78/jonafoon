@@ -33,15 +33,15 @@ export const ImageWrap = styled.span`
 
 export const HeroTitle = styled.div`
   position: absolute;
-  top: 250px;
+  top: 320px;
   left: 134px;
   z-index: 2;
   color: ${white};
 
     h1{
       font-size: 50px;
-      width: 510px;
-      height: 230px;
+      width: 580px;
+      height: 130px;
     }
 
     p {
