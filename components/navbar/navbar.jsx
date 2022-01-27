@@ -43,8 +43,16 @@ const Navbar = ({ internalLinks }) => {
                 )
               } else {
                 return (
-                  <a key={link.value} href={link.href} download target="_blank">{link.value}</a>
-                )
+                  <a
+                    key={link.value}
+                    href={link.href}
+                    download
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {link.value}
+                  </a>
+                );
               }
             })}
           </NavLinks>
