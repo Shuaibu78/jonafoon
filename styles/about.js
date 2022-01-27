@@ -133,17 +133,82 @@ export const ContentCard = styled.div`
   }
 `;
 
+export const FlipCard = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+`;
+
 export const TeamMember = styled(ContentCard)`
   width: 30%;
   height: 550px;
   align-items: flex-start;
   background-color: ${white};
-  box-shadow: 0px 2px 15px rgb(0 0 0 / 5%);
+  perspective: 500px;
+  border-radius: 12px;
+  box-shadow:
+    2.8px 2.8px 3.8px rgba(0, 0, 0, 0.009),
+    6.7px 6.7px 9px rgba(0, 0, 0, 0.013),
+    12.5px 12.5px 17px rgba(0, 0, 0, 0.015),
+    22.3px 22.3px 30.4px rgba(0, 0, 0, 0.018),
+    41.8px 41.8px 56.8px rgba(0, 0, 0, 0.022),
+    100px 100px 136px rgba(0, 0, 0, 0.03)
+  ;
+
+  &:hover ${FlipCard} {
+    transform: rotateY(180deg) ;
+    transition: transform 0.5s;
+  }
 
   ${mobile}{
     width: 100%;
     margin-bottom: 40px;
   }
+`;
+
+export const CardFront = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+`;
+  /* export const Qoutes = styled.blockquote`
+margin-inline: 15px;
+  margin-block: 0px;
+
+  p {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  p:before { 
+    font-family: 'Poppins', sans-serif, -apple-system, Roboto;
+    content: "\201C";
+    font-weight: bold;
+    font-size:30px;
+    color:#fff;
+  } 
+
+  p:after { 
+    content: "\201D";
+    font-weight: bold;
+    font-size:30px;
+    color:#fff;
+  }
+`; */
+
+export const CardBack = styled(CardFront)`
+  background: ${primaryColor};
+  color: white;
+  font-weight: bold;
+  transform: rotateY( 180deg );
+  font-size: 16px;
+  padding: 20px;
 `;
 
 export const TeamMemberImage = styled.div`
