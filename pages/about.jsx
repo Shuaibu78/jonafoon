@@ -42,7 +42,7 @@ import {
 const About = () => {
   const internalLinks = [
     { href: "#mission", value: "Mission" },
-    { href: "#team", value: "Team Members" },
+    { href: "/service", value: "Our Services" },
     {
       href: "https://drive.google.com/file/d/1CvgiOCyv8N7-nEHQb53sgLWIfOcNSOeJ/view?usp=sharing",
       value: "Brochure",
@@ -109,7 +109,7 @@ const About = () => {
         </AboutContentContainer>
       </AboutWrapper>
 
-      <TeamWrapper id="team">
+      {/* <TeamWrapper id="team">
         <TeamTtleContainer>
           <SectionTitle>Our Team</SectionTitle>
         </TeamTtleContainer>
@@ -200,7 +200,7 @@ const About = () => {
             </FlipCard>
           </TeamMember>
         </TeamMemberCardContainer>
-      </TeamWrapper>
+      </TeamWrapper> */}
 
       <Footer />
     </div>
