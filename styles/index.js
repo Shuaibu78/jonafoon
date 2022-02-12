@@ -136,12 +136,23 @@ export const ProjectBtn = styled.button`
   }
 `;
 
-export const CardBtn = styled(ProjectBtn)`
+export const CardBtn = styled.a`
   width: 150px;
   height: 54px;
   border: 1px solid ${primaryColor};
   background-color: ${primaryColor};
   color: ${white};
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px 8px;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 5%);
+  cursor: pointer;
+
+    ${mobile}{
+    width: 45%;
+    height: 54px;
+    font-size: 14px;
+  }
 `;
 
 export const RecentWorkContainer = styled.div`
@@ -249,6 +260,7 @@ export const ProjectCard = styled.div`
   background-color: ${white};
   padding-bottom: 25px;
   width: min-content;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     ${mobile}{
     margin-bottom: 2rem;
@@ -338,6 +350,7 @@ export const ServiceCardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 80%;
 
   ${mobile}{
     flex-direction: column;
@@ -351,7 +364,7 @@ export const ServiceCard = styled.div`
   align-items: center;
   height: 19rem;
   flex-direction: column;
-  width: 36%;
+  width: 45%;
   background-color: ${primaryColor};
 
   ${mobile}{

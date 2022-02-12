@@ -7,7 +7,6 @@ import Footer from "../components/footer/footer";
 import HeroImg from "../img/about.png";
 import Rectangle from "../img/Rectangle.png";
 import Kenneth from "../img/sound.jpg";
-import Zakari from "../img/zakari.png";
 import COO from "../img/owupe.png";
 import Adewunmi from "../img/adewunmi.png";
 import nkechi from "../img/nkechi.png";
@@ -328,31 +327,6 @@ const About = () => {
                   Optimization Technique to improve detection”. Being a tech
                   expert consultant with MG Management Consultancy, has been
                   part of many training and lectures.
-                </p>
-              </CardBack>
-            </FlipCard>
-          </TeamMember>
-          <TeamMember>
-            <FlipCard>
-              <CardFront>
-                <TeamMemberImage>
-                  <Image src={Zakari} alt="Zakari" />
-                </TeamMemberImage>
-                <TeamMemberInfo>
-                  <TeamMemberName>Zakari .O. Osuman</TeamMemberName>
-                  <TeamMemberRole>Cybersecurity - Specialist</TeamMemberRole>
-                </TeamMemberInfo>
-              </CardFront>
-              <CardBack>
-                <p>
-                  Mr.Zakar Osuman is an ICT proffessional from the University of
-                  Portsmouth in the United kingdom. He has very advanced
-                  experience in computer networks and CISCO technology. He is a
-                  CISCO certified network professional for the past 13years. He
-                  is also a senior cyber security expert with CEH,CISM and CISSP
-                  Certifications. A very high level experienced service desk
-                  analyst with additional certifications in ITIL and PMP, he is
-                  a renowned and reputable facilitator and ICT instructor.
                 </p>
               </CardBack>
             </FlipCard>

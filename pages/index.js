@@ -70,7 +70,7 @@ export default function Home() {
             <ProjectDetails>
               <h6>CBN - Training</h6>
               <p>Deployed the training for data protection and regulation based on the data protection act developed by NITDA</p>
-              {/* <CardBtn>Explore More</CardBtn> */}
+              <CardBtn href="https://www.cbn.gov.ng/" target="_blank">Explore More</CardBtn>
             </ProjectDetails>
           </ProjectCard>
           <ProjectCard>
@@ -80,7 +80,7 @@ export default function Home() {
             <ProjectDetails>
               <h6>NCC - Toolkit Generation</h6>
               <p>Generated toolkit for the identification and transition of emerging technologies during covid pandemic outbreak</p>
-              {/* <CardBtn>Explore More</CardBtn> */}
+              <CardBtn href="https://www.ncc.gov.ng/" target="_blank">Explore More</CardBtn>
             </ProjectDetails>
           </ProjectCard>
           <ProjectCard>
@@ -90,7 +90,7 @@ export default function Home() {
             <ProjectDetails>
               <h6>FIRS - Training</h6>
               <p>Deployed Cyber security training in order to teach about how to protect systems, networks, programs, devices and data from cyber attacks</p>
-              {/* <CardBtn>Explore More</CardBtn> */}
+              <CardBtn href="https://www.firs.gov.ng/" target="_blank">Explore More</CardBtn>
             </ProjectDetails>
           </ProjectCard>
         </RecentWorkCards>
