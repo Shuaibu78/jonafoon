@@ -8,12 +8,12 @@ import HeroImg from "../img/about.png";
 import Rectangle from "../img/Rectangle.png";
 import Kenneth from "../img/sound.jpg";
 import Zakari from "../img/zakari.png";
-import COO from "../img/owupe.jpg";
-import Adewunmi from "../img/adewunmi.jpg";
+import COO from "../img/owupe.png";
+import Adewunmi from "../img/adewunmi.png";
 import nkechi from "../img/nkechi.png";
-import owope from "../img/owope.jpeg";
+import owope from "../img/owope.png";
 import bolanle from "../img/bolanle.jpg";
-import Suleiman from "../img/Suleiman.jpeg";
+import Suleiman from "../img/Suleiman.png";
 import chukwuka from "../img/chukwuka.png";
 import {
   HeroContainer,
