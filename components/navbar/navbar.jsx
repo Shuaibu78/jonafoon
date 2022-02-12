@@ -35,12 +35,12 @@ const Navbar = ({ internalLinks }) => {
         <NavLinkWrapper>
           <NavLinks>
             {internalLinks.map((link) => {
-              if (link.value !== "Brochure") {
+              if (link.value !== "View Brochure") {
                 return (
                   <Link key={link.value} href={link.href} passHref>
                     <a>{link.value}</a>
                   </Link>
-                )
+                );
               } else {
                 return (
                   <a

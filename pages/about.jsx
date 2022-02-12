@@ -6,9 +6,15 @@ import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 import HeroImg from "../img/about.png";
 import Rectangle from "../img/Rectangle.png";
-import CEO from "../img/ceo.jpeg";
-import Kenneth from "../img/sound.jpeg";
-import Zakari from "../img/zakari.jpeg";
+import Kenneth from "../img/sound.jpg";
+import Zakari from "../img/zakari.png";
+import COO from "../img/owupe.jpg";
+import Adewunmi from "../img/adewunmi.jpg";
+import nkechi from "../img/nkechi.png";
+import owope from "../img/owope.jpeg";
+import bolanle from "../img/bolanle.jpg";
+import Suleiman from "../img/Suleiman.jpeg";
+import chukwuka from "../img/chukwuka.png";
 import {
   HeroContainer,
   HeroBtnContainer,
@@ -42,10 +48,10 @@ import {
 const About = () => {
   const internalLinks = [
     { href: "#mission", value: "Mission" },
-    { href: "/service", value: "Our Services" },
+    { href: "#team", value: "Team" },
     {
-      href: "https://drive.google.com/file/d/1CvgiOCyv8N7-nEHQb53sgLWIfOcNSOeJ/view?usp=sharing",
-      value: "Brochure",
+      href: "https://drive.google.com/file/d/1Bzozxxmz4HXYy5mf46qIePj9irjeRJSG/view?usp=sharing",
+      value: "View Brochure",
     },
   ];
   return (
@@ -109,7 +115,7 @@ const About = () => {
         </AboutContentContainer>
       </AboutWrapper>
 
-      {/* <TeamWrapper id="team">
+      <TeamWrapper id="team">
         <TeamTtleContainer>
           <SectionTitle>Our Team</SectionTitle>
         </TeamTtleContainer>
@@ -118,10 +124,132 @@ const About = () => {
             <FlipCard>
               <CardFront>
                 <TeamMemberImage>
-                  <Image src={CEO} alt="Bolaji" />
+                  <Image src={owope} alt="owope" />
                 </TeamMemberImage>
                 <TeamMemberInfo>
-                  <TeamMemberName>Bolaji Owope</TeamMemberName>
+                  <TeamMemberName>
+                    Gabriel Adetun Bondefaiye, Owope
+                  </TeamMemberName>
+                  <TeamMemberRole>Director (Chairman)</TeamMemberRole>
+                </TeamMemberInfo>
+              </CardFront>
+              <CardBack>
+                <p>
+                  An Experienced Senior-level professional and a Chartered
+                  Stockbroker. He has served as CEO of several private companies
+                  with over 3 decades of progressive experience and proven
+                  record of significant, successful contribution in financial
+                  management with core competencies in Capital Market
+                  Operations, Asset and Fund Management, International Fund
+                  Mediation (diaspora funds) as well as Groupings and Micro
+                  Financing. He is a highly analytical decision-maker with
+                  extensive experience in building and operating companies along
+                  with proven history of increasing productivity and turning
+                  around difficult situations. He has Masters in Business
+                  Administration (MBA) from Ahmadu Bello University, Zaria,
+                </p>
+              </CardBack>
+            </FlipCard>
+          </TeamMember>
+          <TeamMember>
+            <FlipCard>
+              <CardFront>
+                <TeamMemberImage>
+                  <Image src={chukwuka} alt="chukwuka" />
+                </TeamMemberImage>
+                <TeamMemberInfo>
+                  <TeamMemberName>Dr. Chuwuka Onyekwena</TeamMemberName>
+                  <TeamMemberRole>Director (V. Chairman)</TeamMemberRole>
+                </TeamMemberInfo>
+              </CardFront>
+              <CardBack>
+                <p>
+                  He is an Executive Director of CSEA. He holds a Ph.D in
+                  Economics from University of Portsmouth, UK. He holds a
+                  certificate in Executive Education, Financial Inclusion from
+                  John F. Kennedy School of Government, Harvard University. His
+                  research interests include Foreign Direct Investment (FDI),
+                  Trade, Global Economic Governance, Climate Change, and
+                  Financial Inclusion. Within these areas, he has authored
+                  various peer-reviewed publications and led several research
+                  projects. Dr. Onyekwena is a member of the steering committee
+                  of the West African Think Tank Network (WATTNet), a member of
+                  the African Policy Circle (APC), Global.
+                </p>
+              </CardBack>
+            </FlipCard>
+          </TeamMember>
+          <TeamMember>
+            <FlipCard>
+              <CardFront>
+                <TeamMemberImage>
+                  <Image src={Suleiman} alt="Suleiman" />
+                </TeamMemberImage>
+                <TeamMemberInfo>
+                  <TeamMemberName>Abdurrahman Sulaiman Bawa</TeamMemberName>
+                  <TeamMemberRole>Director</TeamMemberRole>
+                </TeamMemberInfo>
+              </CardFront>
+              <CardBack>
+                <p>
+                  Has over 23 years cognate experience in Business
+                  Administration and Management. He has attended several
+                  seminars, workshops and training within and outside the shores
+                  of Nigeria. He is a director of many successful companies some
+                  among them are: Senior Consultant: Atmosfair Climate &
+                  Sustainability Germany. Group Head of Administration: “To Be
+                  Connected Nigeria Ltd, Abuja, Director: Millennium Aviation
+                  Limited, Abuja, Director: Lexxgem Constructions Ltd Rivers
+                  State, Director: Ahaz Int. Nig. Ltd Kano, Director: Diplomatic
+                  Village Nigeria Ltd Abuja, Director: Private Flyers
+                  International Ltd Kaduna, National Coordinator: Nigerian Book
+                  Trust Kano. As a Business Manager and Administrator, he gives
+                  strategic direction and leadership to the team.
+                </p>
+              </CardBack>
+            </FlipCard>
+          </TeamMember>
+          <TeamMember>
+            <FlipCard>
+              <CardFront>
+                <TeamMemberImage>
+                  <Image src={Adewunmi} alt="Adewunmi" />
+                </TeamMemberImage>
+                <TeamMemberInfo>
+                  <TeamMemberName>
+                    Adewunmi A. Adefarasin (COREN)
+                  </TeamMemberName>
+                  <TeamMemberRole>Managing Director</TeamMemberRole>
+                </TeamMemberInfo>
+              </CardFront>
+              <CardBack>
+                <p>
+                  A graduate of Bachelor of Technology in Engineering from the
+                  Federal University of Technology Minna, Niger State, with over
+                  thirteen years of experience in the field of Civil/Structural
+                  Engineering, he has acquired enormous experience working with
+                  engineering firms cutting across several projects within
+                  Nigeria some of which include, Promasidor Nigeria Ltd Head
+                  Office Isolo, Lagos, NSPRI Ilorin Library Ilorin, Kwara State,
+                  NECO Headquarters Registrar Building Minna.(Office Building),
+                  Nigerian Bar Association National Secretariat Abuja (Utility
+                  Building) and several Projects with Dantata & Sawoe
+                  Construction Company. Adewunmi is a member of several
+                  professional bodies and a registered COREN- (Registered
+                  Engineer R-24405) and Nigerian Society of Engineers (NSE) -
+                  Corporate Member 28320.
+                </p>
+              </CardBack>
+            </FlipCard>
+          </TeamMember>
+          <TeamMember>
+            <FlipCard>
+              <CardFront>
+                <TeamMemberImage>
+                  <Image src={COO} alt="Bolaji" />
+                </TeamMemberImage>
+                <TeamMemberInfo>
+                  <TeamMemberName>Bolaji Owope </TeamMemberName>
                   <TeamMemberRole>Chief Operating Officer</TeamMemberRole>
                 </TeamMemberInfo>
               </CardFront>
@@ -139,6 +267,37 @@ const About = () => {
                   attended various trainings, workshops and seminars, amongst
                   them is the prestigious “Autopsy Training”: - USA (BASIS
                   TECHNOLOGY).
+                </p>
+              </CardBack>
+            </FlipCard>
+          </TeamMember>
+          <TeamMember>
+            <FlipCard>
+              <CardFront>
+                <TeamMemberImage>
+                  <Image src={bolanle} alt="bolanle" />
+                </TeamMemberImage>
+                <TeamMemberInfo>
+                  <TeamMemberName>Mrs. Bolanle Adeyemo</TeamMemberName>
+                  <TeamMemberRole>Human Resource Manager</TeamMemberRole>
+                </TeamMemberInfo>
+              </CardFront>
+              <CardBack>
+                <p>
+                  Holds a Bsc, degree in Sociology from the prestigious
+                  university of Ilorin, and a master’s degree in Criminology
+                  from the university of Lagos. Mrs. Adeyemo begun her
+                  illustrious career in the Nigeria banking sector in 2002
+                  working with several banks until 2012 when she voluntarily
+                  resigned to pursue a career in a more diverse sector. She
+                  joined Jonafoon Nigeria Limited and currently is the Human
+                  Resource Manager. While in banking, Bolanle developed various
+                  skills such as, leadership, technical ability, customer
+                  service, project management, and research. As a successful
+                  banker with a proven history of establishing valuable
+                  relationships with clients, she constantly utilizes a variety
+                  of resources and tools to track and improve business process
+                  as well as recruitment policy for the company.
                 </p>
               </CardBack>
             </FlipCard>
@@ -185,22 +344,51 @@ const About = () => {
                 </TeamMemberInfo>
               </CardFront>
               <CardBack>
-                  <p>
-                    Mr.Zakar Osuman is an ICT proffessional from the University
-                    of Portsmouth in the United kingdom. He has very advanced
-                    experience in computer networks and CISCO technology. He is
-                    a CISCO certified network professional for the past 13years.
-                    He is also a senior cyber security expert with CEH,CISM and
-                    CISSP Certifications. A very high level experienced service
-                    desk analyst with additional certifications in ITIL and PMP,
-                    he is a renowned and reputable facilitator and ICT
-                    instructor.
-                  </p>
+                <p>
+                  Mr.Zakar Osuman is an ICT proffessional from the University of
+                  Portsmouth in the United kingdom. He has very advanced
+                  experience in computer networks and CISCO technology. He is a
+                  CISCO certified network professional for the past 13years. He
+                  is also a senior cyber security expert with CEH,CISM and CISSP
+                  Certifications. A very high level experienced service desk
+                  analyst with additional certifications in ITIL and PMP, he is
+                  a renowned and reputable facilitator and ICT instructor.
+                </p>
+              </CardBack>
+            </FlipCard>
+          </TeamMember>
+          <TeamMember>
+            <FlipCard>
+              <CardFront>
+                <TeamMemberImage>
+                  <Image src={nkechi} alt="nkechi" />
+                </TeamMemberImage>
+                <TeamMemberInfo>
+                  <TeamMemberName>Nkechi Abidemi Amadi</TeamMemberName>
+                  <TeamMemberRole>
+                    Accountant and Financial Admin
+                  </TeamMemberRole>
+                </TeamMemberInfo>
+              </CardFront>
+              <CardBack>
+                <p>
+                  A BSc graduate from Olabisi Onabanjo University, Nigeria
+                  (2007) and Masters in Business and Management from the
+                  University of Portsmouth, United Kingdom (2011), Abidemi Amadi
+                  is a resourceful and diligent professional with the drive,
+                  determination and experience of working in a busy Finance
+                  department, providing support and reports to assist in key
+                  business decisions. She possesses excellent numerical,
+                  communication and analytical skills with a proven ability to
+                  ensure that work is carried out in line with set down policies
+                  and procedures. Abidemi is a Certified Chartered Accountant
+                  (ACAA) and has attended several workshops and training.
+                </p>
               </CardBack>
             </FlipCard>
           </TeamMember>
         </TeamMemberCardContainer>
-      </TeamWrapper> */}
+      </TeamWrapper>
 
       <Footer />
     </div>

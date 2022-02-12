@@ -113,7 +113,10 @@ export const AboutContentContainer = styled.div`
 `;
 
 export const TeamMemberCardContainer = styled(AboutContentContainer)`
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
   width: 80%;
+  grid-row-gap: 30px;
   margin-block: 70px;
 
   ${mobile}{
@@ -142,20 +145,13 @@ export const FlipCard = styled.div`
 `;
 
 export const TeamMember = styled(ContentCard)`
-  width: 30%;
+  width: 100%;
   height: 550px;
   align-items: flex-start;
   background-color: ${white};
   perspective: 500px;
   border-radius: 12px;
-  box-shadow:
-    2.8px 2.8px 3.8px rgba(0, 0, 0, 0.009),
-    6.7px 6.7px 9px rgba(0, 0, 0, 0.013),
-    12.5px 12.5px 17px rgba(0, 0, 0, 0.015),
-    22.3px 22.3px 30.4px rgba(0, 0, 0, 0.018),
-    41.8px 41.8px 56.8px rgba(0, 0, 0, 0.022),
-    100px 100px 136px rgba(0, 0, 0, 0.03)
-  ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   &:hover ${FlipCard} {
     transform: rotateY(180deg) ;
@@ -208,7 +204,7 @@ export const CardBack = styled(CardFront)`
   font-weight: bold;
   transform: rotateY( 180deg );
   font-size: 16px;
-  padding: 20px;
+  padding: 10px;
 `;
 
 export const TeamMemberImage = styled.div`
@@ -283,11 +279,12 @@ export const TeamWrapper = styled.section`
 `;
 
 export const TeamMemberName = styled.p`
-  line-height: 16px;
+  line-height: 26px;
   font-size: 24px;
   color: ${black};
   font-weight: 500;
   text-align: left;
+  margin-block: 18px;
 
   ${mobile}{
   font-size: 20px;
@@ -299,6 +296,7 @@ export const TeamMemberRole = styled.p`
   font-size: 18px;
   color: ${black};
   text-align: left;
+  margin-block: 8px;
 
   ${mobile}{
     font-size: 16px;
