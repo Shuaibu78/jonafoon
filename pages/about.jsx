@@ -14,11 +14,7 @@ import owope from "../img/owope.png";
 import bolanle from "../img/bolanle.jpg";
 import Suleiman from "../img/Suleiman.png";
 import chukwuka from "../img/chukwuka.png";
-import {
-  HeroContainer,
-  HeroBtnContainer,
-  TalkToUsBtn,
-} from "../styles/index";
+import { HeroContainer, HeroBtnContainer, TalkToUsBtn } from "../styles/index";
 
 import {
   AboutWrapper,
@@ -73,9 +69,11 @@ const About = () => {
         <ImageWrap>
           <Image src={HeroImg} alt="construction" />
         </ImageWrap>
-        <HeroTitle>
+        <HeroTitle style={{ top: "220px" }}>
           <HeroSubTitle>
-            <h1 style={{ height: "auto", margin: 0 }}>About The Company</h1>
+            <h1 style={{ height: "auto", margin: 0, fontSize: "46px" }}>
+              About The Company
+            </h1>
           </HeroSubTitle>
           <HeroBtnContainer>
             <Link
@@ -367,6 +365,6 @@ const About = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default About;

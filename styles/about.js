@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Colors, media, FontSizes} from "../components/constants/theme";
+import styled from "styled-components";
+import { Colors, media, FontSizes } from "../components/constants/theme";
 
 const { white, primaryColor, black } = Colors;
 const { titleFontSize } = FontSizes;
@@ -13,7 +13,7 @@ export const AboutWrapper = styled.section`
   width: 100%;
   padding-block: 5rem;
 
-  ${mobile}{
+  ${mobile} {
     padding-block: 2.5rem;
   }
 `;
@@ -27,7 +27,7 @@ export const ImageWrap = styled.span`
     height: 82vh !important;
   }
 
-  ${mobile}{
+  ${mobile} {
     display: none;
   }
 `;
@@ -39,19 +39,19 @@ export const HeroTitle = styled.div`
   z-index: 2;
   color: ${white};
 
-    h1{
-      font-size: 50px;
-      width: 510px;
-      height: 230px;
-    }
-
-    p {
-      font-size: ${titleFontSize};
-      width: 640px;
-      height: 80px;
+  h1 {
+    font-size: 50px;
+    width: 510px;
+    height: 230px;
   }
 
-  ${mobile}{
+  p {
+    font-size: ${titleFontSize};
+    width: 640px;
+    height: 80px;
+  }
+
+  ${mobile} {
     position: initial;
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@ export const AboutTitlecontainer = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  ${mobile}{
+  ${mobile} {
     width: 80%;
   }
 `;
@@ -91,7 +91,7 @@ export const SectionTitle = styled.h3`
   line-height: 36px;
   margin-block: 20px;
 
-  ${mobile}{
+  ${mobile} {
     font-size: 20px;
     line-height: 32px;
   }
@@ -105,7 +105,7 @@ export const AboutContentContainer = styled.div`
   height: fit-content;
   margin-block: 150px;
 
-  ${mobile}{
+  ${mobile} {
     width: 80%;
     flex-direction: column;
     margin-block: 50px;
@@ -119,7 +119,7 @@ export const TeamMemberCardContainer = styled(AboutContentContainer)`
   grid-row-gap: 30px;
   margin-block: 70px;
 
-  ${mobile}{
+  ${mobile} {
     margin-block: 30px;
   }
 `;
@@ -131,7 +131,7 @@ export const ContentCard = styled.div`
   align-items: center;
   height: inherit;
 
-  ${mobile}{
+  ${mobile} {
     width: 100%;
   }
 `;
@@ -154,11 +154,11 @@ export const TeamMember = styled(ContentCard)`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   &:hover ${FlipCard} {
-    transform: rotateY(180deg) ;
+    transform: rotateY(180deg);
     transition: transform 0.5s;
   }
 
-  ${mobile}{
+  ${mobile} {
     width: 100%;
     margin-bottom: 40px;
   }
@@ -173,7 +173,7 @@ export const CardFront = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 `;
-  /* export const Qoutes = styled.blockquote`
+/* export const Qoutes = styled.blockquote`
 margin-inline: 15px;
   margin-block: 0px;
 
@@ -202,8 +202,8 @@ export const CardBack = styled(CardFront)`
   background: ${primaryColor};
   color: white;
   font-weight: bold;
-  transform: rotateY( 180deg );
-  font-size: 16px;
+  transform: rotateY(180deg);
+  font-size: 14px;
   padding: 10px;
 `;
 
@@ -228,7 +228,7 @@ export const CardTitle = styled(SectionTitle)`
   color: ${black};
   font-size: 32px;
 
-  ${mobile}{
+  ${mobile} {
     font-size: 18px;
   }
 `;
@@ -239,7 +239,7 @@ export const HeroSubTitle = styled.div`
   align-items: flex-end;
   height: 280px;
 
-  ${mobile}{
+  ${mobile} {
     h1 {
       font-size: 30px;
       width: 48%;
@@ -253,12 +253,12 @@ export const HeroSubTitle = styled.div`
 export const CardContent = styled.p`
   margin-block: 10px;
   font-size: 22px;
-  color: ${ black };
+  color: ${black};
   line-height: 33px;
   width: 80%;
   text-align: center;
 
-  ${mobile}{
+  ${mobile} {
     width: 100%;
     font-size: 14px;
     line-height: 28px;
@@ -266,15 +266,15 @@ export const CardContent = styled.p`
 `;
 
 export const TeamWrapper = styled.section`
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-block: 5rem;
 
-  ${mobile}{
-  padding-block: 3rem;
+  ${mobile} {
+    padding-block: 3rem;
   }
 `;
 
@@ -286,8 +286,8 @@ export const TeamMemberName = styled.p`
   text-align: left;
   margin-block: 18px;
 
-  ${mobile}{
-  font-size: 20px;
+  ${mobile} {
+    font-size: 20px;
   }
 `;
 
@@ -298,7 +298,7 @@ export const TeamMemberRole = styled.p`
   text-align: left;
   margin-block: 8px;
 
-  ${mobile}{
+  ${mobile} {
     font-size: 16px;
   }
 `;

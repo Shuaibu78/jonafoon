@@ -21,7 +21,6 @@ import Instagram from "../../img/Instagram.png";
 import LinkedIn from "../../img/LinkedIn.png";
 
 const Footer = () => {
-
   let currentYear = new Date().getFullYear();
 
   return (

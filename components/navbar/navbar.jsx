@@ -12,11 +12,10 @@ import {
   SiteLink,
   SocialLink,
 } from "../../styles/navbar";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../img/logo.png";
-import {useState} from "react";
-
+import { useState } from "react";
 
 const Navbar = ({ internalLinks }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -140,4 +139,4 @@ const Navbar = ({ internalLinks }) => {
   );
 };
 
-export default Navbar
+export default Navbar;

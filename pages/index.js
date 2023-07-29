@@ -1,5 +1,5 @@
 import React from "react";
-import Head from 'next/head';
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import tawkTo from "tawkto-react";
@@ -11,17 +11,44 @@ import HeroImg from "../img/home.png";
 import Project1 from "../img/project1.png";
 import Project2 from "../img/project2.png";
 import Project3 from "../img/project3.png";
-import { HeroContainer, HeroTitle, HeroBtnContainer, ServiceBtn, ProjectBtn, RecentWorkContainer, RecentWorkWrapper, RecentWorkCards, ProjectCard, ProjectImgContainer, ProjectDetails, CardBtn, HowWeWorkwrapper, WorkContainer, Subtitle, Paragraph, TalkToUsBtn, WhatWeDo, Service, ServiceCardContainer, ServiceCard, CardTitle, CardParagraph, TitleDescription, ImageWrap} from "../styles/index";
+import {
+  HeroContainer,
+  HeroTitle,
+  HeroBtnContainer,
+  ServiceBtn,
+  ProjectBtn,
+  RecentWorkContainer,
+  RecentWorkWrapper,
+  RecentWorkCards,
+  ProjectCard,
+  ProjectImgContainer,
+  ProjectDetails,
+  CardBtn,
+  HowWeWorkwrapper,
+  WorkContainer,
+  Subtitle,
+  Paragraph,
+  TalkToUsBtn,
+  WhatWeDo,
+  Service,
+  ServiceCardContainer,
+  ServiceCard,
+  CardTitle,
+  CardParagraph,
+  TitleDescription,
+  ImageWrap,
+} from "../styles/index";
 
 export default function Home() {
-
   // Direct Chat Link
   // https://tawk.to/chat/tawkToPropertyId/tawkToKey
 
   React.useEffect(() => {
-    tawkTo("61bfbc36c82c976b71c22f51", "832a5b38dc0348776559dc2045ecf7d12de62fa8")
+    tawkTo(
+      "61bfbc36c82c976b71c22f51",
+      "832a5b38dc0348776559dc2045ecf7d12de62fa8",
+    );
   }, []);
-
 
   const internalLinks = [
     { href: "#project", value: "Project" },
@@ -33,8 +60,14 @@ export default function Home() {
     <div>
       <Head>
         <title>Home</title>
-        <meta name="description" content="Jonafoon Nigeria Limited optimizes business opportunities by rendering a service that is readily available delivered by professionally qualiﬁed people, provides latest technology products and transfers knowledge through training and development opportunities." />
-        <meta name="keywords" content="Jonafoon, Jonafoon Nigeria Limited, ICT, construction" />
+        <meta
+          name="description"
+          content="Jonafoon Nigeria Limited optimizes business opportunities by rendering a service that is readily available delivered by professionally qualiﬁed people, provides latest technology products and transfers knowledge through training and development opportunities."
+        />
+        <meta
+          name="keywords"
+          content="Jonafoon, Jonafoon Nigeria Limited, ICT, construction"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar internalLinks={internalLinks} />
@@ -45,7 +78,12 @@ export default function Home() {
         </ImageWrap>
         <HeroTitle>
           <h1>We Provide Effective World Class Solutions!</h1>
-          <p>We are a group of companies  with over 35 years of track records in Construction, ICT, Consultancy and Project management. Established in 1982, we have developed an enviable reputation for customer service and satisfaction.</p>
+          <p>
+            We are a group of companies with over 35 years of track records in
+            Construction, ICT, Consultancy and Project management. Established
+            in 1982, we have developed an enviable reputation for customer
+            service and satisfaction.
+          </p>
           <HeroBtnContainer>
             <Link href="#services" passHref>
               <ServiceBtn>Our Services</ServiceBtn>
@@ -60,7 +98,10 @@ export default function Home() {
       <RecentWorkContainer id="project">
         <RecentWorkWrapper>
           <Subtitle>Our Recent Works</Subtitle>
-          <Paragraph>At the heart of every project we work on is the urge to solve real problems for our customers. These are some of our recent projects.</Paragraph>
+          <Paragraph>
+            At the heart of every project we work on is the urge to solve real
+            problems for our customers. These are some of our recent projects.
+          </Paragraph>
         </RecentWorkWrapper>
         <RecentWorkCards>
           <ProjectCard>
@@ -69,8 +110,13 @@ export default function Home() {
             </ProjectImgContainer>
             <ProjectDetails>
               <h6>CBN - Training</h6>
-              <p>Deployed the training for data protection and regulation based on the data protection act developed by NITDA</p>
-              <CardBtn href="https://www.cbn.gov.ng/" target="_blank">Explore More</CardBtn>
+              <p>
+                Deployed the training for data protection and regulation based
+                on the data protection act developed by NITDA
+              </p>
+              <CardBtn href="https://www.cbn.gov.ng/" target="_blank">
+                Explore More
+              </CardBtn>
             </ProjectDetails>
           </ProjectCard>
           <ProjectCard>
@@ -79,8 +125,13 @@ export default function Home() {
             </ProjectImgContainer>
             <ProjectDetails>
               <h6>NCC - Toolkit Generation</h6>
-              <p>Generated toolkit for the identification and transition of emerging technologies during covid pandemic outbreak</p>
-              <CardBtn href="https://www.ncc.gov.ng/" target="_blank">Explore More</CardBtn>
+              <p>
+                Generated toolkit for the identification and transition of
+                emerging technologies during covid pandemic outbreak
+              </p>
+              <CardBtn href="https://www.ncc.gov.ng/" target="_blank">
+                Explore More
+              </CardBtn>
             </ProjectDetails>
           </ProjectCard>
           <ProjectCard>
@@ -89,8 +140,14 @@ export default function Home() {
             </ProjectImgContainer>
             <ProjectDetails>
               <h6>FIRS - Training</h6>
-              <p>Deployed Cyber security training in order to teach about how to protect systems, networks, programs, devices and data from cyber attacks</p>
-              <CardBtn href="https://www.firs.gov.ng/" target="_blank">Explore More</CardBtn>
+              <p>
+                Deployed Cyber security training in order to teach about how to
+                protect systems, networks, programs, devices and data from cyber
+                attacks
+              </p>
+              <CardBtn href="https://www.firs.gov.ng/" target="_blank">
+                Explore More
+              </CardBtn>
             </ProjectDetails>
           </ProjectCard>
         </RecentWorkCards>
@@ -99,8 +156,14 @@ export default function Home() {
       <HowWeWorkwrapper id="process">
         <WorkContainer>
           <Subtitle>How We Work</Subtitle>
-          <Paragraph>We listen to you and provide effective solutions that bridges the gap between your goals and the need of your customers</Paragraph>
-          <Link href="https://tawk.to/chat/61bfbc36c82c976b71c22f51/1fnafedev" passHref>
+          <Paragraph>
+            We listen to you and provide effective solutions that bridges the
+            gap between your goals and the need of your customers
+          </Paragraph>
+          <Link
+            href="https://tawk.to/chat/61bfbc36c82c976b71c22f51/1fnafedev"
+            passHref
+          >
             <TalkToUsBtn>Talk To Us</TalkToUsBtn>
           </Link>
         </WorkContainer>
@@ -109,22 +172,25 @@ export default function Home() {
       <WhatWeDo id="services">
         <Service>
           <Subtitle>What We Do</Subtitle>
-          <TitleDescription>We follow a solution methodology that allows us to build partnerships for life with our customers.</TitleDescription>
+          <TitleDescription>
+            We follow a solution methodology that allows us to build
+            partnerships for life with our customers.
+          </TitleDescription>
           <ServiceCardContainer>
             <ServiceCard>
-              <CardTitle>
-                Construction and Repairs
-              </CardTitle>
+              <CardTitle>Construction and Repairs</CardTitle>
               <CardParagraph>
-                We deliver services through providing informed advice and consultancy services in our areas of concentration through our network of professionals and partners.
+                We deliver services through providing informed advice and
+                consultancy services in our areas of concentration through our
+                network of professionals and partners.
               </CardParagraph>
             </ServiceCard>
             <ServiceCard>
-              <CardTitle>
-                Information Technology
-              </CardTitle>
+              <CardTitle>Information Technology</CardTitle>
               <CardParagraph>
-                We deliver information communication and technology services that increases our customers efficiences, enhance productivity and optimise costs for their businesses.
+                We deliver information communication and technology services
+                that increases our customers efficiences, enhance productivity
+                and optimise costs for their businesses.
               </CardParagraph>
             </ServiceCard>
           </ServiceCardContainer>
@@ -133,5 +199,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }

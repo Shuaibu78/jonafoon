@@ -4,11 +4,7 @@ import Image from "next/image";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 import HeroImg from "../img/about.png";
-import {
-  HeroContainer,
-  HeroBtnContainer,
-  TalkToUsBtn,
-} from "../styles/index";
+import { HeroContainer, HeroBtnContainer, TalkToUsBtn } from "../styles/index";
 
 import { HeroTitle, ImageWrap, HeroSubTitle } from "../styles/about";
 
@@ -28,13 +24,12 @@ import {
 } from "../styles/service";
 
 const Service = () => {
+  const internalLinks = [
+    { href: "#construction", value: "Construction" },
+    { href: "#ict", value: "ICT" },
+    { href: "/contact", value: "Contact" },
+  ];
 
-    const internalLinks = [
-      { href: "#construction", value: "Construction" },
-      { href: "#ict", value: "ICT" },
-      { href: "/contact", value: "Contact" },
-    ];
-  
   return (
     <div>
       <Head>
@@ -55,7 +50,7 @@ const Service = () => {
         <ImageWrap>
           <Image src={HeroImg} alt="construction" />
         </ImageWrap>
-        <HeroTitle>
+        <HeroTitle style={{ top: "220px" }}>
           <HeroSubTitle>
             <h1 style={{ height: "auto", margin: 0 }}>Our Services</h1>
           </HeroSubTitle>
